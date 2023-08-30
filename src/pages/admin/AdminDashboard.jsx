@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Card, CardBody, CardHeader, Divider, Grid, GridItem, Heading, Image, SimpleGrid, Stack, Table, TableCaption, TableContainer, Tbody, Td, Text, Th, Thead, Tr} from '@chakra-ui/react'
 import { Navbar } from '../../components/admin/Navbar'
+import { Footer } from '../../components/admin/Footer'
 import Sidebar from '../../components/admin/Sidebar'
 import '../../css/admin/adminDashboard.css'
 import step_one from '../../img/admin_steps/1.png'
@@ -30,7 +31,7 @@ const AdminDashboard = () => {
           <Text className='sub-title' fontSize={{ base: '16px', md: '20px', lg: '22px' }}  mt={{ base: '6px',sm: '6px', md: '6px', lg: '12px' }} >Available Project Templates</Text>
           <TableContainer>
             <Table variant='simple' size={{ base: 'sm', md: 'sm', lg: 'md' }} mt='6px'>
-              <TableCaption>"Seamlessly utilize pre-existing templates without any inconvenience."</TableCaption>
+              {/* <TableCaption>"Seamlessly utilize pre-existing templates without any inconvenience."</TableCaption> */}
               <Thead>
                 <Tr>
                   <Th>ID</Th>
@@ -80,9 +81,10 @@ const AdminDashboard = () => {
 
       </GridItem>
     </Grid>
-
+    <Footer/>
     
     </>
+    
   )
 }
 
